@@ -82,6 +82,7 @@ router.post("/login", async (req, res) => {
   } catch (err) {
     console.log(err);
     res.status(400).json({
+      msg: err,
       success: false,
       message: "Error Occured while Login",
     });
